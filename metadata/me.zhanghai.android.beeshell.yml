@@ -1,0 +1,23 @@
+Categories:
+  - Development
+License: Apache-2.0
+AuthorName: Hai Zhang
+AuthorEmail: dreaming.in.code.zh@gmail.com
+AuthorWebSite: https://github.com/zhanghai
+SourceCode: https://github.com/zhanghai/BeeShell
+IssueTracker: https://github.com/zhanghai/BeeShell/issues
+Changelog: https://github.com/zhanghai/BeeShell/releases
+
+RepoType: git
+Repo: https://github.com/zhanghai/BeeShell.git
+
+Builds:
+  - versionName: 1.0.4
+    versionCode: 5
+    commit: v1.0.4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: None

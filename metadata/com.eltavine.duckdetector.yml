@@ -1,0 +1,28 @@
+Categories:
+  - Development
+License: MIT
+AuthorName: eltavine
+AuthorEmail: me@eltavine.com
+WebSite: https://eltavine.com
+SourceCode: https://github.com/eltavine/Duck-Detector-Refactoring
+IssueTracker: https://github.com/eltavine/Duck-Detector-Refactoring/issues
+
+RepoType: git
+Repo: https://github.com/eltavine/Duck-Detector-Refactoring
+
+Builds:
+  - versionName: 26.4.1
+    versionCode: 215
+    commit: 3ec7df1e89d3979a8f3003a34a560e544ec7c3e9
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i '/foojay-resolver-convention/d' ../settings.gradle.kts
+      - sed -i -e '/JavaLanguageVersion/s/17/21/' ../build-logic/build.gradle.kts
+      - sdkmanager 'cmake;4.1.2'
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 26.4.1
+CurrentVersionCode: 215

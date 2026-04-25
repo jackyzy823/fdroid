@@ -1,0 +1,36 @@
+Categories:
+  - Development
+License: Apache-2.0
+AuthorName: 小潼
+AuthorEmail: 3278671549@qq.com
+WebSite: https://github.com/XiaoTong6666
+SourceCode: https://github.com/XiaoTong6666/FuseHide
+IssueTracker: https://github.com/XiaoTong6666/FuseHide/issues
+
+RepoType: git
+Repo: https://github.com/XiaoTong6666/FuseHide
+
+MaintainerNotes: |-
+  version code is calculated by the count of commits
+  License changed from MIT to Apache 2.0
+  Package and repo name renamed from FuseFixer to FuseHide
+
+Builds:
+  - versionName: '1.7'
+    versionCode: 7
+    commit: 68f70b11cdd723111bd8aab433d5ad33d414ac23
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i '/foojay-resolver-convention/d' ../settings.gradle.kts
+
+  - versionName: '1.33'
+    versionCode: 33
+    commit: 6bdc738ed6490d586494930bb5de7c2e56779c53
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i '/foojay-resolver-convention/d' ../settings.gradle.kts
+
+AutoUpdateMode: None
+UpdateCheckMode: None

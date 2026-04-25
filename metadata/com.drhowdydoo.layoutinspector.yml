@@ -1,11 +1,13 @@
 Categories:
   - Development
-# see https://github.com/DrHowdyDoo/LayoutInspector/blob/56270ac47ce0d3e412278bafd0ea5dc881372d02/privacy_policy#L5
+MaintainerNotes: |-
+  License, see https://github.com/DrHowdyDoo/LayoutInspector/blob/56270ac47ce0d3e412278bafd0ea5dc881372d02/privacy_policy#L5
+  Author Info, see github profile and commit info
+  From https://github.com/DrHowdyDoo/LayoutInspector/blob/56270ac47ce0d3e412278bafd0ea5dc881372d02/privacy_policy#L15-L17
+  AuthorName: Avi Saxena
+  AuthorEmail: avi.saxena99@gmail.com
+
 License: MIT
-# See github profile and commit info
-#AuthorName: Avi Saxena
-#AuthorEmail: avi.saxena99@gmail.com
-# See https://github.com/DrHowdyDoo/LayoutInspector/blob/56270ac47ce0d3e412278bafd0ea5dc881372d02/privacy_policy#L15-L17
 AuthorName: DrHowdyDoo
 AuthorEmail: drhowdydoo@gmail.com
 AuthorWebSite: https://github.com/DrHowdyDoo

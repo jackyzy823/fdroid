@@ -1,6 +1,6 @@
 Categories:
   - Development
-License: MIT
+License: Apache-2.0
 AuthorName: eltavine
 AuthorEmail: me@eltavine.com
 WebSite: https://eltavine.com
@@ -9,6 +9,9 @@ IssueTracker: https://github.com/eltavine/Duck-Detector-Refactoring/issues
 
 RepoType: git
 Repo: https://github.com/eltavine/Duck-Detector-Refactoring
+
+MaintainerNotes: |-
+  License changed from MIT To Apache-2.0 since https://github.com/eltavine/Duck-Detector-Refactoring/commit/e26cbd5154565890159ac1e08fec32c1dda37a67
 
 Builds:
   - versionName: 26.4.1
@@ -22,7 +25,18 @@ Builds:
       - sed -i -e '/JavaLanguageVersion/s/17/21/' ../build-logic/build.gradle.kts
       - sdkmanager 'cmake;4.1.2'
 
+  - versionName: 26.4.4-alpha
+    versionCode: 220
+    commit: 7672a21ef3430b3958a1a623ac81fd967fc32f86
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i '/foojay-resolver-convention/d' ../settings.gradle.kts
+      - sed -i -e '/JavaLanguageVersion/s/17/21/' ../build-logic/build.gradle.kts
+      - sdkmanager 'cmake;4.1.2'
+
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 26.4.1
-CurrentVersionCode: 215
+CurrentVersion: 26.4.4-alpha
+CurrentVersionCode: 220
